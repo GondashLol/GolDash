@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="mapa.css" />
+
+</head>
+
+<body>
+    <header>
+        <a href="ligas.html" class="ligas.html">
+            <nav>
+                <h1><a style="color: aliceblue;" href="inicio.html">‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎
+                        ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎
+                        ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎
+                        <p> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎
+                            ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎
+                            ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
+                    </a>
+                    <h1>
+                        <ul>
+                            <div class="text">
+                                <li><a href="noticias.html">Últimas noticias</a></li>
+                                <div class="underline"></div>
+                            </div>
+
+                            <div class="text">
+                                <li><a href="analisis.html">Análisis</a></li>
+                                <div class="underline"></div>
+                            </div>
+
+                            <div class="text">
+                                <li><a href="ligas.html">Ligas</a></li>
+                                <div class="underline"></div>
+                            </div>
+
+                            <div class="text">
+                                <li><a href="servicio.html">Servicio</a></li>
+                                <div class="underline"></div>
+                            </div>
+
+                            <div class="text">
+                                <li><a href="galeria.html">Galería</a></li>
+                                <div class="underline"></div>
+                            </div>
+
+                            <div class="text">
+                                <li><a href="contacto.html">Contacto</a></li>
+                                <div class="underline"></div>
+                            </div>
+                        </ul>
+            </nav>
+    </header>
+
+    <p>‎ ‎ </p>
+    <h1>Contacto</h1>
+    <p>‎ ‎ </p>
+
+    <div class="content">
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+
+        <div class="news-container">
+            <aside class="fila-arriba">
+                <h2>Teléfono</h2>
+                <p>Teléfono para aportar sugerencias. </p>
+                <p>+34 369 705 336 </p>
+            </aside>
+
+            <main class="fila-medio">
+                <h2>Mensaje</h2>
+                <form action="mailto:gonzaloolaechea70@gmail.com" method="post" enctype="text/plain">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="correo">Correo:</label><br>
+                    <input type="email" id="correo" name="correo" required><br><br>
+
+                    <label for="mensaje">Mensaje:</label><br>
+                    <input type="mensaje" id="mensaje" name="mensaje" required><br><br>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </main>
+
+            <aside class="fila-abajo">
+                <h2>Ubicación</h2>
+                <p>Dirección de para redactar para GolDash</p>
+                <p>Carrer del Rosselló, 78, 82</p>
+                <p>(Eixample, 08029 Barcelona)</p>
+            </aside>
+        </div>
+    </div>
+
+    <style>
+        .content {
+            display: flex;
+            flex: 1;
+        }
+
+        .map-container {
+            width: 70%;
+        }
+
+        .info-container {
+            width: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([41.386827592944286, 2.1488090858146616], 15);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([41.386827592944286, 2.1488090858146616]).addTo(map)
+            .bindPopup('Aquí está el marcador.')
+            .openPopup();
+    </script>
+
+    <footer>
+        <p>&copy; 2024 GolDash. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

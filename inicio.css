@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.columna-izquierda {
+    background-color: #d8d8d8;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.columna-izquierda a {
+    color: black;
+}
+
+.columna-izquierda a:hover {
+    color: rgb(122, 122, 122);
+}
+
+.columna-izquierda a:link {
+    text-decoration: none;
+
+}
+
+.columna-derecha {
+    background-color: #d8d8d8;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.columna-derecha a {
+    color: black;
+}
+
+.columna-derecha a:hover {
+    color: rgb(122, 122, 122);
+}
+
+.columna-derecha a:link {
+    text-decoration: none;
+
+}
+
+.contenido-principal {
+    background-color: #d8d8d8;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contenido-principal a {
+    color: black;
+}
+
+.contenido-principal a:hover {
+    color: rgb(122, 122, 122);
+}
+
+.contenido-principal a:link {
+    text-decoration: none;
+
+}
+
+.columna-extra {
+    background-color: #d8d8d8;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.columna-extra a {
+    color: black;
+}
+
+.columna-extra a:hover {
+    color: rgb(122, 122, 122);
+}
+
+.columna-extra a:link {
+    text-decoration: none;
+
+}
+
+
+footer {
+    background-color: #25303b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+header {
+    background-image: url(../Imagenes/GolDash.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.columna-extra {
+    flex-basis: calc(50% - 20px);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.columna-izquierda,
+.columna-derecha,
+.contenido-principal,
+.columna-extra {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.news-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 600px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.active {
+    opacity: 1;
+}
+
+
+.slide a {
+    color: rgb(255, 255, 255);
+}
+
+.slide a:hover {
+    color: rgb(194, 194, 194);
+}
+
+.slide a:link {
+    text-decoration: none;
+
+}
+
+.active {
+    opacity: 1;
+    z-index: 3;
+}
+
+
+
+.text {
+    display:inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.underline {
+    position: absolute;
+    bottom: 10;
+    left: 50%;
+    height: 2px;
+    width: 75%;
+    background-color: #d8d8d8;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.text:hover .underline {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.underline {
+    z-index: 0;
+}
+
+
+

@@ -1,0 +1,263 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Pusab, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Tres columnas: izquierda, principal, derecha */
+    gap: 20px; /* Espacio entre las columnas */
+    padding: 20px;
+}
+
+.contenido-principal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contenido-principal a {
+    color:black;
+}
+
+.contenido-principal a:hover{
+    color:rgb(0, 0, 0);
+}
+
+.contenido-principal a:link {
+     text-decoration: none;
+     
+}
+
+
+footer {
+    background-color: #25303b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Hacer el diseño responsive */
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, una sola columna */
+    }
+}   
+
+h1 {text-align: center;color: rgb(0, 0, 0);}
+h2 {text-align: center;color: rgb(0, 0, 0);}
+p {text-align: center;}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0; /* Sin padding para evitar huecos */
+    margin: 10px;
+    width: 80%;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.news-item img {
+    width: 150px; /* Cambia según tu preferencia */
+    height: auto;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.news-content {
+    flex: 1;
+    text-align: center;
+    padding: 15px; /* Padding para el contenido */
+}
+
+.news-content h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.news-content h3 {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+
+header {
+    background-image: url(../Imagenes/GolDash.png); /* Ruta local a la imagen */
+    background-size: cover; /* Para que la imagen cubra todo el header */
+    background-position: center; /* Centrar la imagen */
+    padding: 20px; /* Espaciado dentro del header */
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre el título y el menú */
+    align-items: center; /* Centrar verticalmente */
+}
+
+h1 a {
+    color: aliceblue; /* Color del título */
+    text-decoration: none; /* Sin subrayado */
+}
+
+ul {
+    list-style: none; /* Sin puntos en la lista */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+    display: flex; /* Flexbox para alinear los elementos del menú */
+}
+
+ul li {
+    margin-left: 20px; /* Espacio entre los elementos del menú */
+}
+
+ul li a {
+    color: aliceblue; /* Color de los enlaces del menú */
+    text-decoration: none; /* Sin subrayado */
+}
+
+
+
+
+.contenedor {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.fila-arriba {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.fila-arriba a {
+    color:black;
+}
+
+
+.fila-abajo {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+.fila-abajo a {
+    color:black;
+}
+
+
+.fila-medio {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.fila-medio a {
+    color:black;
+}
+
+.text {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.underline {
+    position: absolute;
+    bottom: 10;
+    left: 50%;
+    height: 2px;
+    width: 75%;
+    background-color: #d8d8d8;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+.text:hover .underline {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #8a8a8a8d;
+    color: #000000;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Ajusta la posición del tooltip */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
